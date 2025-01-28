@@ -1,55 +1,87 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>24 Africa Radio Schedule</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24-Africa Online Radio</title>
+    <link rel="icon" type="image/x-icon" href="/logo.png">
+    
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(90deg, #ffcc00, #0077cc, #FF0000);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        header {
+            text-align: left;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+        h1 {
+            margin: 0;
+            color: #fff;
+        }
+        #radio-player {
+            width: 300px;
+            text-align: center;
+        }
+        #radio-player audio {
+            width: 100%;
+        }
+        footer {
+            position: absolute;
+            bottom: 10px;
+            color: #fff;
+        }
+       .img{
+        position: absolute;
+        top:  10px;
+        center: 10px;
+        width: 100px;
+        height: 100px;
+        background: url('img') no-repeat center / contain;
+
+       }
+        .logo {
+            position: absolute;
+            top: 10px;
+            center: 10px;
+            width: 100px;
+            height: 100px;
+            background: url('logo.img') no-repeat center / contain;
+        }
+        .play-icon {
+            width: 50px;
+            height: 50px;
+            background: url('logo') no-repeat center / contain;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
     <header>
-      <img src="logo.png" alt="24 Africa Radio Logo">
-      <h1>24 Africa Radio Schedule</h1>
+        <div class="logo.png"></div>
+        <p><img src="logo.png" style="float:center;width:100px;height:100px;">
+        <h1>24 Africa Radio</h1>
+        <p>Music & More</p>
     </header>
-    <table>
-      <tr>
-        <th>Day</th>
-        <th>Start time</th>
-        <th>End time</th>
-      </tr>
-      <tr>
-        <td>Monday</td>
-        <td>8:00 am</td>
-        <td>10:00 am</td>
-      </tr>
-      <tr>
-        <td>Tuesday</td>
-        <td>3:00 pm</td>
-        <td>5:00 pm</td>
-      </tr>
-      <tr>
-        <td>Wednesday</td>
-        <td>10:00 am</td>
-        <td>12:00 pm</td>
-      </tr>
-      <tr>
-        <td>Thursday</td>
-        <td>6:00 pm</td>
-        <td>8:00 pm</td>
-      </tr>
-      <tr>
-        <td>Friday</td>
-        <td>1:00 pm</td>
-        <td>3:00 pm</td>
-      </tr>
-      <tr>
-        <td>Saturday</td>
-        <td>9:00 am</td>
-        <td>11:00 am</td>
-      </tr>
-      <tr>
-        <td>Sunday</td>
-        <td>4:00 pm</td>
-        <td>6:00 pm</td>
-      </tr>
-    </table>
-  </body>
+    <div id="radio-player">
+        <audio controls autoplay>
+            <source src="https://stream.zeno.fm/7ymwk3gumwzuv" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="play-icon"></div>
+    </div>
+    <footer>
+        <p>&copy; 2024 24-Africa Online Radio App</p>
+    </footer>
+</body>
 </html>
